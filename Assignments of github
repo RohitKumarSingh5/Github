@@ -1,0 +1,169 @@
+
+Topic : Git and Github assignment.
+
+Use GIT as local VCS. Steps to follow:
+1.	Create a directory ‘project_dir’ & cd to ‘project_dir’.
+Ans :  creating a directory 
+           mkdir project_dir
+
+           moving to the directory 
+           cd project_dir
+2.	Initialize git version database.
+Ans :  git init
+
+3.	Create a new file index.html.
+Ans : touch  index.html
+4.	Check the git status. You should find index.html as untracked file.
+Ans : git status
+5.	Stage the index.html file.
+Ans : git add index.html
+6.	 Commit index.html.
+Ans : git commit -m “ A new file created”
+7.	Make few changes in index.html & create a new file info.txt file.
+Ans : touch info.txt
+8.	Check git status. You should find index.html & info.txt as untracked files.
+Ans : git status
+9.	Configure GIT to ignore all txt files.
+Ans : touch.gitignore > .gitignore file- “*.txt”
+10.	Again check the git status. You should find only index.html as untracked file.
+Ans : git status
+11.	State & commit index.html.
+Ans : git add index.html > git commit -m ”Done ” 
+12.	Log all your comments so far.
+Ans : git log
+13.	Make some changes in index.html.
+Ans : A more line added.
+14.	Revert the change made in the previous step using git command.
+Ans: git checkout –
+15.	Again change index.html.
+Ans : Added another line.
+16.	Stage index.html.
+Ans : git add index.html
+17.	Revert back the last stage.
+Ans : git rm --cached index.html
+18.	Rename ‘add’ command to ‘my-add’.
+Ans: alias my-add='git add'
+19.	Using my_add command Stage index.html again & commit the changes.
+Ans : my-add index.html >  git commit -m ”Done”.
+20.	Revert the last commit.
+Ans: git revert HEAD
+
+GIT BRANCHING
+SECTION-1 (HTML assignments) - Steps to follow:
+21.	First take a backup of your assignments & projects. This is required because due to incorrect GIT operation you may lose your files.
+Ans : Copied the assignment in different folder.
+22.	Create an empty directory ‘Assignments’ & cd to ‘Assignments’.
+Ans : creating a directory 
+           mkdir Assignments
+           moving to the directory 
+           cd Assignments
+23.	Create a file README.txt inside ‘Assignments’ & write few lines about the contents of ‘Assignments’ folder.
+Ans : touch README.txt
+24.	Commit README.txt file.
+Ans : git add README.txt
+25.	Now create a new branch ‘html-assignments’
+Ans : git branch html-assignments
+26.	Switch to ‘html-assignments’ branch
+Ans : git checkout html-assignments
+27.	Copy all HTML assignments inside ‘Assignments’ folder.
+Ans : copied 
+28.	Commit HTML assignments into ‘html-assignments’ branch.
+Ans : git add index.html   > git commit -m "Done”
+29.	Make minor changes into few files belonging to ‘html-assignments’ branch.
+Ans : a line added
+30.	Commit those changed files.
+Ans : git add index.html > git commit -m "Done”
+31.	Switch to master branch.
+Ans : git checkout master
+32.	Make minor changes into README.txt file & commit those changes into master.
+Ans : A line added  > git add README.txt  > git commit -m “Done”
+33.	Again switch to ‘html-assignments’ branch.
+Ans : git checkout html-assignments.
+34.	Make minor changes into few files belonging to ‘html-assignments’ branch.
+Ans : A new line added.
+35.	Commit those changes.
+Ans : git add index.html  >  git commit -m "Done"
+36.	Switch to master.
+Ans : git checkout master
+37.	Merge ‘html-assignments’ branch into master. Confirm all html assignments are shown in master.
+Ans : git merge html-assignments > git log --oneline
+38.	Finally delete the ‘html-assignments’ branch.
+Ans : git branch -d html-assignments
+
+SECTION-2 - (CSS assignments) Steps to follow:
+1.	Create a new branch ‘css-assignments’.
+Ans : git branch css-assignments
+2.	Switch to ‘css-assignments’ branch.
+Ans : git checkout css-assignments
+3.	Copy all CSS assignments inside ‘Assignments’ folder.
+Ans : Copied.
+4.	Commit CSS assignments into ‘css-assignments’ branch.
+Ans : git add style.css >  git commit -m "Done”
+5.	Make minor changes into README.txt file on line 1 belonging to ‘css-assignments’ branch.
+Ans: A new line added.
+6.	Commit those changed files.
+Ans : git add README.txt > git commit -m "Comitted"
+7.	Switch to master branch.
+Ans : git checkout master
+8.	Make minor changes into README.txt file on line 3 & commit those changes into master
+Ans : git commit -am "Changes made”
+9.	Again switch to ‘css-assignments’ branch.
+Ans : git checkout css-assignments
+10.	Make minor changes into few files belonging to ‘css-assignments’ branch
+Ans : A newline added
+11.	Commit those changes.
+Ans : git commit -am”Done”       
+12.	Switch to master.
+Ans : git checkout master
+13. Merge ‘css-assignments’ branch into master. Confirm all css assignments are shown in
+master.
+Ans :  git merge css-assignments > git commit -am "Done"
+14. Finally delete the ‘css-assignments’ branch
+Ans : git branch -d css-assignments
+
+
+ Section 3 
+1. Create a new branch ‘js-assignments’.
+Ans :  git branch js-assignments
+2. Switch to ‘js-assignments’ branch.
+Ans : git checkout js-assignments
+3. Copy all JavaScript assignments inside ‘Assignments’ folder.
+Ans : Done
+4. Commit JavaScript assignments into ‘js-assignments’ branch.
+Ans :  git commit -am "A new file is added"
+5. Make minor changes into README.txt file on line 1 belonging to ‘js-assignments’ branch.
+Ans :  Done
+6. Commit those changed files.
+Ans :  git commit -am "Done"
+7. Switch to master branch.
+Ans :  git checkout master
+8. Make minor changes into README.txt file on line 1 & commit those changes into
+master.
+Ans :  DONE >  git commit -am "More changes to README.txt from master branch"
+9. Again switch to ‘js-assignments’ branch.
+Ans : git checkout master
+10. Make minor changes into few files belonging to ‘js-assignments’ branch.
+Ans : DONE
+11. Commit those changes.
+Ans : git commit -am "Made more change  to the script.js file"
+12. Switch to master.
+Ans : git checkout master
+13. Merge ‘js-assignments’ branch into master. Confirm all JavaScript assignments are
+shown in master.
+Ans :  git merge js-assignments > git commit -am "Done"
+14. Finally delete the ‘js-assignments’ branch.
+Ans :  git branch -d js-assignments
+
+
+
+Git Remoting 
+section 1
+
+39. Create a github account if you do not have already.
+Ans :  user name: capgem-training, email: imargs05@gmail.com
+40. Login on into github account.
+Ans :  Done
+41. Create new public repository ‘freshersbatch-oct16’.
+Ans :  Done
+42. Commit & push any sample file to this repository under ‘Assignments’ directory.
+Ans : git remote add "https://github.com/capgem-training/freshersbatch-oct16.git" > git push origin master
